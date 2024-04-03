@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+nav{
+    background-color: #ff7474;
+    position: fixed;
+    width: 100%;
+    padding-left: 5rem;
+}
+li{
+    list-style-type: none ;
+    display: inline-block;
+    vertical-align: center;
+    margin: 1rem;
+    padding: 0 3rem;
+}
+li img{
+    width: 40px;
+    height: 30px;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    background-color: #ff7474;
+    position: fixed;
+    width: 100%;
+    padding-left: 5rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0 rem;
+    font-weight: 800;
+}
+
+/* Added styles for the menu icon */
+.menu-icon {
+    display: none; /* Hide by default */
+}
+
+.menu-icon img {
+    width: 40px;
+    height: 30px;
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+html{
+    box-sizing: border-box;
+}
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    nav {
+        padding-left: 1rem; /* Reduce left padding for smaller screens */
+    }
+
+    li {
+        padding: 0 1rem; /* Reduce padding for smaller screens */
+    }
+
+    /* Show menu icon on smaller screens */
+    .menu-icon {
+        display: inline-block;
+    }
+
+    /* Hide other menu items on smaller screens */
+    ul {
+        display: none;
+    }
+
+    /* Show menu items when menu icon is clicked */
+    .menu-icon.active + ul {
+        display: block;
+    }
+}
+
+
+
+/* New styles for the split-container and halves */
+.split-container {
+    display: flex;
+    width: 100%;
+}
+
+.half {
+    flex: 1; /* Each half takes up equal space */
+    height: 100vh;
+    width: 50%;
+    position: static;
+}
+
+/* Additional styling for each half */
+.half:nth-child(1) {
+    background: linear-gradient(90deg, hsl(54, 100%, 84%), hsl(359, 100%, 91%)); 
+    /* Linear gradient for the first half *//* Light gray background for the first half */
+}
+
+.half:nth-child(2) {
+    background-color: #333; /* Lighter gray background for the second half */
+    background-image: url(../pexels-robin-stickel-70497.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .split-container {
+        flex-direction: column; /* Stack halves vertically on smaller screens */
+    }
+
+    .half {
+        width: 100%; /* Each half takes up full width on smaller screens */
+    }
+}
+
+
+/* Your existing CSS */
+
+/* New styles for the content div */
+.content {
+    padding: 25% 10%; /* 25% padding top and bottom, 10% padding left and right */
+}
+
+/* New styles for the content items */
+.content-item {
+    margin-bottom: 10px; /* Add some spacing between items */
+}
+
+/* Style for the button */
+.button button {
+    padding: 15px 100px; /* Padding for the button */
+    background-color: #ff7474;
+    color: #fff;
+    font-size: medium;
+    border: none;
+}
+.content div{
+    padding-bottom: 10px;
+}
+
+.split-container h1{
+    text-transform:uppercase ;
+    letter-spacing: 0rem;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div p{
+    font-weight: 100;
+}
+
+
+
+
+/* New Div */
+/* Your existing CSS */
+
+/* New styles for the custom-split-container and custom-halves */
+.custom-split-container {
+    display: flex;
+    width: 100%;
+    background:linear-gradient(90deg,hsl(53, 100%, 84%), hsl(312, 100%, 85%) ) ;
+    /* background-image: url(../sec.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.custom-split-container .custom-half {
+    height: 100vh;
+    width: 50%;
+    
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .custom-split-container {
+        flex-direction: column; /* Stack halves vertically on smaller screens */
+    }
+
+    .custom-half {
+        width: 100%; /* Each half takes up full width on smaller screens */
+    }
+}
+
+/* Style customization for the second custom-half */
+.custom-half:nth-child(2) {
+    background-position: center;
+    background-size: cover;
+}
+
+
+ /* New styles for the child-div */
+ /* .custom-split-container .child-div {
+    position:static;
+    width: 555px;
+    height: 555px;
+    background-color: hsla(0, 0%, 20%, 0.501);
+    margin: 30px 15px 10px 20px ;
+} */
+
+/* New styles for the child-div */
+.custom-split-container .custom-half button{
+    padding: 0;
+    border: none;
+    background: none;
+}
+
